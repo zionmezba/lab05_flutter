@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(const LabClass05());
 }
+
+/* 
+Overflow Handling
+1. Single Child Scroll View
+2. Expanded
+3. Flexible
+
+*/
 
 class LabClass05 extends StatelessWidget {
   const LabClass05({super.key});
@@ -17,29 +26,52 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Row(
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Hi, ",
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.abc_sharp,
+              size: 50,
+              color: const Color.fromARGB(255, 255, 0, 0),
             ),
-            Text(
-              "This is ",
-              style: TextStyle(
-                color: Colors.yellow,
-                fontSize: 50,
-              ),
+            Icon(
+              Iconsax.activity,
+              size: 50,
+              color: const Color.fromARGB(255, 255, 0, 0),
             ),
-            Text(
-              "Flutter.",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 20,
-              ),
-            ),
+            Row(
+              children: [
+                Icon(
+                  Iconsax.activity,
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Icon(
+                  Iconsax.activity,
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Icon(
+                  Iconsax.activity,
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Column(
+                  children: [
+                    Icon(
+                      Iconsax.activity,
+                      size: 50,
+                      color: const Color.fromARGB(255, 4, 0, 255),
+                    ),
+                    Icon(
+                      Iconsax.activity,
+                      size: 50,
+                      color: const Color.fromARGB(255, 0, 110, 255),
+                    ),
+                  ],
+                )
+              ],
+            )
           ],
         ),
       ),
