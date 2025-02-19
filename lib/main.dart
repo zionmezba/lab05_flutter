@@ -17,7 +17,7 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Text("Flutter Basics 02"),
+        body: Text("Updated something"),
       ),
     );
   }
